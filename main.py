@@ -22,7 +22,7 @@ try:
             p[i] = [0, 0, 255, brigtness()]
         tree.value = p
         step = step + 1
-        sleep(0.1)
+        sleep(0.5)
 except KeyboardInterrupt:
     tree.close()
 tree.close()
