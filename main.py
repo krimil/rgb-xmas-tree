@@ -5,7 +5,8 @@ from random import randrange
 
 
 def brigtness():
-    return randrange(2) * 5 + 1
+    # return randrange(2) * 5 + 1
+    return randrange(1,6)
 
 
 tree = RGBXmasTree()
@@ -22,7 +23,7 @@ try:
             p[i] = [0, 0, 255, brigtness()]
         tree.value = p
         step = step + 1
-        sleep(0.5)
+        sleep(0.3)
 except KeyboardInterrupt:
     tree.close()
 tree.close()
